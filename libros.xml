@@ -1,0 +1,20 @@
+<libro>
+<titulo>Ejercicio de XML</titulo>
+<autor>Juan Carlos López Ponce</autor>
+<año_publicacion>2025</año_publicacion>
+<genero>Aprendizaje</genero>
+</libro>
+
+<libro>
+<titulo>Segundo</titulo>
+<autor>Juan</autor>
+<año_publicacion>2026</año_publicacion>
+<genero>Fantasia</genero>
+</libro>
+
+<libro>
+<titulo>Tercero</titulo>
+<autor>Carlos</autor>
+<año_publicacion>2027</año_publicacion>
+<genero>Comedia</genero>
+</libro>
