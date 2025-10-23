@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!-- Bloque de estilos -->
     <style>
         body {
             background-image: url(https://wallpapercave.com/wp/wp3795740.jpg);
@@ -10,6 +11,11 @@
             height: 100vh;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+        body, p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #222;
+}
         .cont1 {
             display: flex;
             flex-direction: column;
@@ -27,6 +33,8 @@
         }
         .card {
             background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             padding: 20px;
@@ -63,25 +71,59 @@
             color: #007acc;
             text-decoration: underline;
         }
+        .moon {
+            width: 400px;
+            height: auto;
+            align-self: center;
+            border-radius: 15px;
+        }
+        .storm {
+            width: 400px;
+            height: auto;
+            align-self: auto;
+            border-radius: 15px;
+        }
+        .text-box {
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: #222; /* texto oscuro */
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
 
     </style>
     <head>
+        <!-- Añado un icono para la página -->
+        <link rel="icon" type="image/x-icon" href="faviconhistoria.ico">
         <title>Terra</title>
     </head>
     <body>
+        <!--índice de la página -->
+        <div class="index">
         <div class="card indice">
             <h3>Índice de capítulos</h3>
             <ul>
                 <li><a href="#Cap1">Capítulo 1 – El rugido de Veru</a></li>
                 <li><a href="#Cap2">Capítulo 2 – Encuentro bajo la luna plateada</a></li>
                 <li><a href="#Cap3">Capítulo 3 – La tormenta que salvaría Terra</a></li>
+                <!-- Redirección a la página de créditos -->
+                <li><a href="Créditos.html">Créditos</a></li>
             </ul>
+        </div>
         </div>
 
         <div class="cont1">
             <h2 class="C1" id="Cap1">Capítulo 1 – El rugido de Veru, el Dragón de la Tormenta</h2>
             <img class="dragon" src="https://creator.nightcafe.studio/jobs/pZ3txwrnaT32iPJUgUgd/pZ3txwrnaT32iPJUgUgd-rEtUu.jpg" alt="Dragon">
         </div>
+        <div class="text-box">
        <p>
         La lluvia caía sin descanso. En lo alto de los acantilados de Morthal, las nubes giraban en círculos sobre una enorme cueva, como si el mismo cielo girara en torno a un secreto que no debía ser despertado.
 
@@ -116,7 +158,6 @@
 
     Y se levantó.
 </p>
-
 <h4>Presente – Cima de los Acantilados de Morthal</h4>
 <p>
     El aire era tan denso que dolía respirar. Cada rayo iluminaba el mundo por un instante, y en uno de esos destellos, Davis lo vio.
@@ -188,6 +229,7 @@
 
     —He sobrevivido.
 </p>
+</div>
 
 <div class="card">
   <h5>[Sistema Divino - Recompensa desbloqueada]</h5>
@@ -200,8 +242,10 @@
 </div>
 
 <div class="cont1">
+    <img class="moon" src="https://www.shutterstock.com/shutterstock/videos/3631186055/thumb/1.jpg?ip=x480" alt="MoonC2">
     <h2 class="C1" id="Cap2">Capítulo 2 – Encuentro bajo la luna plateada</h2>
 </div>
+<div class="text-box">
 <p>
     La noche cayó suave sobre el bosque de Cirenval. Los árboles susurraban con la brisa y la luna llena bañaba el claro con una luz plateada y fría. Davis caminaba lentamente, todavía recuperándose del agotador combate contra Veru. Su cuerpo le pesaba, pero su espíritu ardía con nuevas ganas de avanzar.
 
@@ -273,9 +317,12 @@
 
     Con la alianza sellada bajo la luna de plata, Davis y Lyra partieron hacia la siguiente gran aventura.
     </p>
+    </div>
     <div class="cont1">
+        <img class="storm" src="https://i.ytimg.com/vi/yVofAoHqvHg/maxresdefault.jpg" alt="stormC3">
     <h2 class="C1" id="Cap3">Capítulo 3 – La tormenta que salvaría Terra</h2>
 </div>
+<div class="text-box">
 <p>
     El sol apenas asomaba en el horizonte cuando Davis y Lyra llegaron a las murallas humeantes de Althea. El aire estaba impregnado de cenizas y el hedor de la batalla reciente. Las calles, normalmente bulliciosas, ahora eran un campo desolado de escombros y cuerpos caídos.
 
@@ -333,5 +380,6 @@
 
     Desde aquel día, Davis ya no fue solo un espadachín reencarnado, sino un héroe legendario, el guerrero que trajo la tormenta para proteger Terra.
 </p>
+</div>
  </body>
 </html>
