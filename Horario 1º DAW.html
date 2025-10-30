@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario 1º DAW</title>
+    <style>
+        :root{
+            --bg: #f7f9fb;
+            --card: #ffffff;
+            --muted-border: #e6e9ee;
+            --accent: #2b6f9e;
+        }
+        body{
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background: var(--bg);
+            color: #222;
+            padding: 24px;
+        }
+        .table-wrap{
+            max-width: 960px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(20,30,50,0.08);
+            overflow: auto;
+            padding: 8px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            text-align: center;
+            min-width: 720px;
+        }
+
+        
+        th, td{
+            padding: 12px 10px;
+            border-bottom: 1px solid var(--muted-border);
+        }
+
+        td.Horario{
+            font-weight: 700;
+            color: #1f2b36;
+            background: #f0f4f8;
+            width: 140px;
+        }
+
+        .descanso td{
+            background: #fff3cd;
+            font-weight: 800;
+            color: #5a4200;
+        }
+
+        .Programación{ background: #4a90b6; color:#fff; }
+        .BD{ background: #43b39a; color:#fff; }
+        .Sistemas{ background: #c9b75a; color:#1f1f1f; }
+        .IPE{ background: #6aa96b; color:#fff; }
+        .Sostenibilidad{ background: #b14b63; color:#fff; }
+        .LDM{ background: #4f44a3; color:#fff; }
+        .Digitalización{ background: #9c605e; color:#fff; }
+        .ED{ background: #7e4ea1; color:#fff; }
+        .Horario{ background: transparent; }
+        .Dias{ background: #dfe7ee; font-weight:700; color: #0b3b57; }
+        h1 {
+        max-width: 960px;
+        margin: 0 auto 16px;
+        text-align: center;
+    }
+    .img {
+        text-align:center; margin:12px 0;
+        max-width:220px; width:40%; height:auto; display:inline-block; mix-blend-mode:multiply; opacity:0.95; filter:grayscale(6%); border-radius:8px
+    }
+
+      
+    </style>
+</head>
+<body>
+    <h1>IES Playamar</h1>
+
+    <div class="table-wrap">
+        <table>
+            <tr>
+                <th colspan="6"><strong>1º DAW</strong></th>
+            </tr>
+            <tr class="Dias">
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td class="Horario">15:15–16:15</td>
+                <td class="BD">BD</td>
+                <td class="IPE">IPE</td>
+                <td class="Digitalización">Digitalización</td>
+                <td class="BD">BD</td>
+                <td class="Sistemas">Sistemas</td>
+            </tr>
+            <tr>
+                <td class="Horario">16:15–17:15</td>
+                <td class="BD">BD</td>
+                <td class="IPE">IPE</td>
+                <td class="Sostenibilidad">Sostenibilidad</td>
+                <td class="Programación">Programación</td>
+                <td class="Sistemas">Sistemas</td>
+            </tr>
+            <tr>
+                <td class="Horario">17:15–18:15</td>
+                <td class="BD">BD</td>
+                <td class="IPE">IPE</td>
+                <td class="ED">ED</td>
+                <td class="LDM">LDM</td>
+                <td class="BD">BD</td>
+            </tr>
+            <tr class="descanso">
+                <td><strong>18:15–18:30</strong></td>
+                <td colspan="5"><strong>Descanso</strong></td>
+            </tr>
+            <tr>
+                <td class="Horario">18:30–19:30</td>
+                <td class="Programación">Programación</td>
+                <td class="Sistemas">Sistemas</td>
+                <td class="Programación">Programación</td>
+                <td class="LDM">LDM</td>
+                <td class="Programación">Programación</td>
+            </tr>
+            <tr>
+                <td class="Horario">19:30–20:30</td>
+                <td class="Programación">Programación</td>
+                <td class="Sistemas">Sistemas</td>
+                <td class="ED">ED</td>
+                <td class="LDM">LDM</td>
+                <td class="Programación">Programación</td>
+            </tr>
+            <tr>
+                <td class="Horario">20:30–21:30</td>
+                <td class="ED">ED</td>
+                <td class="Sistemas">Sistemas</td>
+                <td class="ED">—</td>
+                <td class="LDM">LDM</td>
+                <td class="Programación">—</td>
+            </tr>
+    </table>
+    </div>
+    <div>
+        <div class="img">
+            <img
+                src="https://www.alianzafpdual.es/wp-content/uploads/2022/01/IES-Playamar_logo.jpg"
+                alt="IES Playamar"
+            />
+        </div>
+    </div>
+</body>
+</html>
