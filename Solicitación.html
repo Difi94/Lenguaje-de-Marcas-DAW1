@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Curso</title>
+    <!-- 
+    Ejercicio de Formulario
+    Solicitud de un curso (form)
+    Los datos seran(tipos):
+    Nombre del solicitante
+    Email
+    Curso que pide (DAW1, DAW2, DAM1, DAM2)
+    Turno (mañana o tarde)
+    ¿Necesita transporte? (si/no) (checkbox)
+    Botón de enviar, borrar y ayuda
+    Accion: página hmtl que nos indique que la solicitud ha sido recibida
+    Fecha (selector de fecha)
+    Nombre obligatorio
+    Longitud de nombre sea minimo de 3 caracteres y maximo de 30
+    Añadir campo Edad numérico entre 18 y 40 años
+    -->
+    <style>
+        .formulario {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 80vh;
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin: 0 20%;
+            font: 16px Arial, sans-serif;
+        }
+        .encabezado {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Solicitud del Curso</h1>
+    </div>
+    <div class = "formulario">
+    <form action="SolicitudRecibida.html" method="post">
+        <label for="nombre">Nombre del solicitante:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="18" max="40" required><br><br>
+
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="curso">Curso que pide:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="DAW1">DAW1</option>
+            <option value="DAW2">DAW2</option>
+            <option value="DAM1">DAM1</option>
+            <option value="DAM2">DAM2</option>
+        </select><br><br>
+
+        <label for="turno">Turno:</label><br>
+        <input type="radio" id="mañana" name="turno" value="mañana" required>
+        <label for="manana">Mañana</label><br>
+        <input type="radio" id="tarde" name="turno" value="tarde" required>
+        <label for="tarde">Tarde</label><br><br>
+        <input type="checkbox" id="transporte" name="transporte" value="si">
+        <label for="transporte">¿Necesita transporte?</label><br><br>
+        <input type="submit" value="Enviar Solicitud">
+        <input type="reset" value="Borrar">
+        <input type="button" value="Ayuda" onclick="alert('Por favor, rellene todos los campos del formulario y haga clic en Enviar Solicitud para enviar su solicitud.')">
+    </form>
+    </div>
+</body>
+</html>

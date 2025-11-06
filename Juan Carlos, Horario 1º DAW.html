@@ -38,7 +38,7 @@
         
         th, td{
             padding: 12px 10px;
-            border-bottom: 1px solid var(--muted-border);
+            border: 1px solid var(--muted-border);
         }
 
         td.Horario{
@@ -69,10 +69,20 @@
         margin: 0 auto 16px;
         text-align: center;
     }
+   
     .imagenplayamar {
-        margin:12px 0; border-radius:8px; padding:8px;
+        margin:16px auto; border-radius:8px; padding:8px;
         max-width:220px; width:40%; height:auto;
-        display:inline-block; mix-blend-mode:multiply; opacity:0.95; filter:grayscale(6%);
+        mix-blend-mode:multiply;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagenplayamar img {
+        width:100%; height:auto; border-radius:8px;
+        opacity:0.95;
+        filter:grayscale(6%);
+
     }
       
     </style>

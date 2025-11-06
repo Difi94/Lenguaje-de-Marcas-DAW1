@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante El Churrasco</title>
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="headerTitle">
+        <h3>Restaurante El Churrasco</h3>
+    </div>
+    <div class="indice">
+        <h2>MENÚ DE NAVEGACIÓN</h2>
+        <ul>
+                <li>&#129385; Entrantes</li>
+                <li>&#129385;<a href="Platos Principales"></a></li>
+                <li>&#129385;<a href="Postres"></a></li>
+                <li>&#129385;<a href="Platos Veganos"></a></li>
+                <li>&#129385;<a href="Bebidas y Vinos"></a></li>
+                <li>&#129385;<a href="Reservas"></a></li>
+            </ul>
+    </div>
+    <div>
+        <h2 class="headerBody">Una Tradición de Sabor, Desde 1952</h2>
+
+
+
+    </div>
+
+</body>
