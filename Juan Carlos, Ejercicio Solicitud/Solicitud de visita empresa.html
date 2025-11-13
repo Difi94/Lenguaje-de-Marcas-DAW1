@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Visita</title>
+    
+    <style>
+        :root{
+            --bg: #f3f7fb;
+            --card: #ffffff;
+            --primary: #08344b;
+            --accent: #2e6b8f;
+            --muted: #9fb2c3;
+            --text: #0b2733;
+            --soft: #eaf3f8; 
+        }
+
+        html,body{ height:100%; }
+        body{
+            font-family: Verdana, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0; padding: 18px 12px;
+            -webkit-font-smoothing:antialiased;
+        }
+
+        .encabezado{ text-align:center; margin: 6px 0 14px }
+        .encabezado h1{ margin:0; color:var(--primary); font-size:1.6rem }
+        .encabezado p{ margin:6px 0 0; color:var(--muted) }
+
+        .formulario{
+            max-width:820px; margin: 0 auto; background:var(--card);
+            padding:20px 22px; border-radius:10px; box-shadow:0 8px 24px rgba(10,30,45,0.06);
+            border:1px solid rgba(8,52,75,0.04);
+        }
+
+        label{ display:block; margin:10px 0 6px; color:var(--primary); font-weight:600 }
+        .radio-list{ display:flex; gap:18px; margin-top:8px; align-items:flex-start }
+
+        .radio-item{ display:flex; flex-direction:column; align-items:flex-start; font-weight:600; color:var(--primary); }
+        
+        .radio-item input{ margin-top:8px; transform:scale(1.05); }
+        
+        input[type="text"], input[type="email"], input[type="date"], select, output{
+            width:100%; padding:9px 10px; border-radius:6px; border:1px solid var(--muted);
+            box-sizing:border-box; color:var(--text); background:linear-gradient(0deg,#fff,#fbfeff);
+        }
+
+        input[type="range"]{ width:100% }
+
+        input[type="file"]{ color:var(--muted) }
+
+        .inline{ display:inline-block; margin-right:10px }
+
+        .muted{ color:var(--muted); font-size:0.95rem }
+
+        .actions{ margin-top:14px }
+        input[type="submit"], input[type="reset"]{
+            background: var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:6px; cursor:pointer;
+            font-weight:700; margin-right:8px;
+        }
+        input[type="reset"]{ background:#6aa0b8 }
+        
+
+        footer{
+            text-align:center; padding:12px 10px; margin-top:18px; font-size:0.95rem; color:#fff;
+            background: linear-gradient(180deg,var(--primary), #0b2b3a); border-top:1px solid rgba(255,255,255,0.04);
+        }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Solicitud de visita</h1>
+    </div>
+    <div class = "formulario">
+    <form id="solicitud" action="Solicitud Recibida.html" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre del solicitante:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la visita</legend>
+
+            <label for="fecha_prevista_select">Fecha prevista (elija una opción)</label>
+            <select id="fecha_prevista_select" name="fecha_prevista_select" required>
+                <option value="2025-11-20">20 Noviembre 2025</option>
+                <option value="2025-11-27">27 Noviembre 2025</option>
+                <option value="2025-12-04">04 Diciembre 2025</option>
+                <option value="2025-12-11">11 Diciembre 2025</option>
+                <option value="otra">Otra fecha (use el selector de fecha)</option>
+            </select>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+
+            <label for="Horario">Horario:</label>
+            <div class="radio-list" role="radiogroup" aria-label="Horario preferido">
+                <label class="radio-item"><span>Mañana</span><input type="radio" id="mañana" name="horario" value="mañana" required></label>
+                <label class="radio-item"><span>Mediodía</span><input type="radio" id="mediodia" name="horario" value="mediodia"></label>
+                <label class="radio-item"><span>Tarde</span><input type="radio" id="tarde" name="horario" value="tarde"></label>
+            </div>
+
+            <label for="grupo">Nº de personas del grupo:</label>
+            <input type="range" id="personas" name="personas" min="1" max="30" value="15" oninput="this.nextElementSibling.value = this.value">
+            <output>15</output>
+
+            <label for="documento">Adjuntar documento (opcional)</label>
+            <input type="file" id="documento" name="documento">
+            
+            <input type="hidden" id="empresa" name="empresa" value="MiEmpresa">
+
+            <label for="guia" style="margin-top:8px"><input type="checkbox" id="guia" name="guia" value="si"> ¿Necesita guía?</label>
+        </fieldset>
+
+        <div class="actions">
+            <input type="submit" value="Enviar" formmethod="get" formaction="Solicitud Recibida.html">
+            <input type="reset" value="Borrar">
+            <input type="button" value="Ayuda" onclick="alert('Por favor, rellene todos los campos del formulario y haga clic en Enviar.')">
+        </div>
+    </form>
+    </div>
+    <footer>
+        <strong>Juan Carlos Technologies S.L.</strong> — C/ Industria 10, 28000 Ciudad · Tel: 900 123 456 · info@miempresa.com
+    </footer>
+</body>
+</html>
