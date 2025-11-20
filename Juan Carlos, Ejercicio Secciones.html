@@ -1,215 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ejercicio Secciones - Baloncesto</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
 box-sizing: border-box;
 }
-
 body {
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f5f5f5;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
-.banner {
-width: 100%;
-height: 150px;
-background: linear-gradient(135deg, #1a237e, #0d47a1, #1976d2);
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-size: 18px;
-margin-bottom: 10px;
-}
-
 header {
-background-color: #1a237e;
-padding: 20px;
-text-align: center;
-font-size: 32px;
-color: white;
-margin-bottom: 10px;
+    background: linear-gradient(135deg, #1a1a3e 0%, #2d3d5c 100%);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #ffd700;
+    box-shadow: 0 4px 10px rgba(26,26,62,0.3);
 }
-
-header h2 {
-margin: 0;
-padding: 10px;
+nav {   
+    float: left;
+    width: 30%;
+    background: linear-gradient(180deg, #5b3a9e 0%, #3d2570 100%);
+    padding: 20px;
+    border-radius: 8px;
 }
-
-nav {
-float: left;
-width: 30%;
-background: #e3f2fd;
-padding: 20px;
-margin-right: 10px;
-border-radius: 8px;
-border-left: 5px solid #1976d2;
-}
-
 nav ul {
-list-style-type: none;
-padding: 0;
-margin: 0;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
 }
-
 nav li {
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
-
 nav a {
-text-decoration: none;
-color: #1a237e;
-font-weight: 600;
-display: block;
-padding: 8px;
-border-radius: 4px;
-background: #fff;
-border: 1px solid #bbdefb;
-transition: 0.3s;
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: 600;
+    display: block;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.1);
+    border-left: 4px solid #ffd700;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
-
 nav a:hover {
-background: #1976d2;
-color: white;
+    background: #ffd700;
+    color: #3d2570;
+    padding-left: 20px;
 }
-
 article {
-float: left;
-padding: 20px;
-width: 65%;
-background-color: #fff;
-border-radius: 8px;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
 }
-
-.section {
-margin-bottom: 20px;
-padding-bottom: 15px;
-border-bottom: 2px solid #bbdefb;
+article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 12px 0;
+    box-shadow: 0 3px 8px rgba(26,26,62,0.2);
 }
-
-.section img {
-max-width: 100%;
-height: auto;
-border-radius: 6px;
-margin: 10px 0;
-}
-
-.section h3 {
-color: #1a237e;
-margin-top: 0;
-}
-
-.additional-block {
-background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
-padding: 15px;
-margin-top: 20px;
-border-radius: 8px;
-border-left: 4px solid #9c27b0;
-font-style: italic;
-color: #4a148c;
-}
-
 section::after {
-content: "";
-display: table;
-clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
-
 footer {
-background-color: #1a237e;
-padding: 15px;
-text-align: center;
-color: white;
-margin-top: 15px;
-font-size: 14px;
-clear: both;
+    background: linear-gradient(180deg, #6f95e0 0%, #353577 100%);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -4px 10px rgba(26,26,62,0.3);
 }
-
-footer a {
-color: #81d4fa;
-text-decoration: none;
+.img-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-footer a:hover {
-text-decoration: underline;
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 4px solid #5b3a9e;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(26,26,62,0.1);
+}
+.section h3 {
+    color: #2d3d5c;
+    margin-top: 0;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 600px) {
-nav, article {
-width: 100%;
-height: auto;
-}
+    nav, article, section, header, footer, .img-banner {
+        width: 100%;
+        height: auto;
+    }
+    
 }
 </style>
+
+<img class="img-banner" src="https://as2.ftcdn.net/jpg/01/41/80/23/1000_F_141802368_lqjDaD8hOKTJh13aSN7aMXEaTZdGjGvK.jpg" alt="Banner de Baloncesto">
+    <title>Secciones</title>
 </head>
 <body>
-
-<div class="banner">
-🏀 Baloncesto - Equipos y Jugadores Destacados 🏀
-</div>
-
 <header>
-<h2>Ejercicio Secciones - Baloncesto</h2>
+    <h2>Baloncesto</h2>
 </header>
 
 <section>
-<nav>
-    <ul>
-    <li><a href="#lakers">🏀 Lakers</a></li>
-    <li><a href="#warriors">⭐ Warriors</a></li>
-    <li><a href="#celtics">🍀 Celtics</a></li>
-    <li><a href="#reglas">📋 Reglas del Juego</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#lakers">🏀 Lakers</a></li>
+            <li><a href="#warriors">⭐ Warriors</a></li>
+            <li><a href="#celtics">🟢 Celtics</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div class="section" id="lakers">
+            <h3>Los Angeles Lakers</h3>
+            <img src="https://cdn.prgloo.com/media/7f73d48be4844ee990cdbb6fe9b5a4e0.jpg?width=1200&height=1800" alt="Lakers Arena">
+            <p>Los Lakers son uno de los equipos más exitosos de la NBA con 17 campeonatos. Basados en Los Ángeles, California, son conocidos por su larga historia de campeones como Magic Johnson y Kobe Bryant.</p>
+            <strong>Arena:</strong> Crypto.com Arena | <strong>Fundado:</strong> 1947</p>
+        </div>
 
-<article>
-    <div class="section" id="lakers">
-        <h3>Los Angeles Lakers</h3>
-        <img src="https://via.placeholder.com/300x200?text=Lakers+Arena" alt="Los Angeles Lakers Arena">
-        <p>Los Lakers son uno de los equipos más icónicos de la NBA. Con su sede en Los Ángeles, California, el equipo ha ganado múltiples campeonatos y ha sido hogar de algunos de los mejores jugadores de la historia del baloncesto.</p>
-        <p>Fundados en 1947, los Lakers han dejado un legado inigualable en el mundo del baloncesto profesional. Su rivalidad histórica con los Boston Celtics es una de las más famosas en los deportes estadounidenses. El equipo ha ganado 17 campeonatos de la NBA.</p>
-    </div>
+        <div class="section" id="warriors">
+            <h3>Golden State Warriors</h3>
+            <img src="https://cdn-west.sqhk.co/connor/2015/11/gg38q5Y/GoldenStateWarriors-2015.jpg" alt="Warriors Stadium">
+            <p>Los Warriors ganaron tres campeonatos en cuatro años (2015, 2017, 2018) con su famoso "trío" liderado por Stephen Curry. Son conocidos por su baloncesto ofensivo y su capacidad de lanzar triples.</p>
+            <strong>Arena:</strong> Chase Center | <strong>Fundado:</strong> 1946</p>
+        </div>
 
-    <div class="section" id="warriors">
-        <h3>Golden State Warriors</h3>
-        <img src="https://via.placeholder.com/300x200?text=Warriors+Arena" alt="Golden State Warriors Arena">
-        <p>Los Warriors son un equipo revolucionario que transformó el baloncesto moderno con su énfasis en los triples y el movimiento de balón rápido.</p>
-        <p>Bajo la dirección de Steve Kerr y con estrellas como Stephen Curry, Klay Thompson y Draymond Green, los Warriors han ganado múltiples campeonatos en los últimos años y redefinieron la forma de jugar baloncesto profesional.</p>
-    </div>
-
-    <div class="section" id="celtics">
-        <h3>Boston Celtics</h3>
-        <img src="https://via.placeholder.com/300x200?text=Celtics+Arena" alt="Boston Celtics Arena">
-        <p>Los Celtics son la franquicia más exitosa en la historia de la NBA con 18 campeonatos ganados. Basados en Boston, Massachusetts, han sido pioneros en el desarrollo del juego defensivo.</p>
-        <p>Leyendas como Bill Russell, Larry Bird y John Havlicek han dejado su marca indeleble en la organización. Su rivalidad con los Lakers es una de las más antiguas y apasionantes del deporte profesional.</p>
-    </div>
-
-    <div class="section" id="reglas">
-        <h3>Reglas Fundamentales del Baloncesto</h3>
-        <img src="https://via.placeholder.com/300x200?text=Basketball+Court" alt="Cancha de Baloncesto">
-        <p>El baloncesto es un deporte jugado entre dos equipos de 5 jugadores cada uno. El objetivo es lanzar el balón a través del aro del equipo contrario para anotar puntos.</p>
-        <p>Puntuación: Un tiro de tres puntos vale 3 puntos, un tiro de campo normal vale 2 puntos, y un tiro libre vale 1 punto. Los partidos se dividen en 4 cuartos de 12 minutos cada uno en la NBA.</p>
-    </div>
-
-    <div class="additional-block">
-        <strong>💡 Dato Interesante:</strong> El baloncesto fue inventado en 1891 por James Naismith, un profesor de educación física canadiense. Fue diseñado como una actividad de interior para sus estudiantes durante el invierno.
-    </div>
-</article>
+        <div class="section" id="celtics">
+            <h3>Boston Celtics</h3>
+            <img src="https://nesn.com/wp-content/uploads/sites/5/2023/10/TD-Garden.jpg" alt="Celtics Court">
+            <p>Los Celtics son la franquicia más ganadora de la NBA con 17 campeonatos hasta 2024. Basados en Boston, Massachusetts, tienen una rica tradición ganadora que se remonta a los años 60.</p>
+            <strong>Arena:</strong> TD Garden | <strong>Fundado:</strong> 1946</p>
+        </div>
+    </article>
 </section>
 
 <footer>
-<p><strong>Autor:</strong> Juan Carlos | <strong>Fecha:</strong> 13/11/25</p>
-<p><strong>Licencia:</strong> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 (CC BY 4.0)</a></p>
-<p>&copy; 2025 - Todos los derechos reservados bajo licencia CC BY 4.0</p>
+    <a href="http://127.0.0.1:5500/Secciones,%20Juan%20Carlos.html">Secciones</a> © 2025 by <a href="https://example.com">Juan Carlos</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 </footer>
-
 </body>
 </html>

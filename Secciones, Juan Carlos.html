@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---
+En header poner el título del trabajo, la actividad y un banner (imagen alargada)
+
+La parte central tendrá al menos 3 secciones que serán enlazadas ( exto con alguna imagen) desde el menú lateral.
+
+En el pie (footer) pondremos nuestro nombre  con la fecha y la licencia que damos a la página (CC)
+
+Añade algun bloque adicional para personalizar tu diseño de plantilla web
+
+Poner algun elemento que permita delimitar las secciones, como por ej, color de fondo o  border.
+
+Entre los bloques dejaremos un espacio pequeño de separación.
+--->
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+header {
+    background-color: #1663c969;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+nav {   
+    float: left;
+    width: 30%;
+    height: 300px; 
+    background: #3200496b;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #00255062;
+    height: 300px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    background-color: #2305a748;
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.img-banner {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.img-banner:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+.img-banner:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+@media (max-width: 600px) {
+    nav, article, section, header, footer, .img-banner {
+        width: 100%;
+        height: auto;
+    }
+}
+.section-separator {
+    margin: 20px 0;
+    border-top: 2px solid #ccc;
+}
+
+</style>
+    <title>Deporte de Invierno</title>
+</head>
+<body>
+    <header>
+        <img src="https://img.freepik.com/vector-premium/logotipo-snowboard_25327-271.jpg" alt="Snowboard Logo" class="img-banner">
+        <h1>Snowboard</h1>
+    </header>
+    <section>
+        
+        <h2>Introducción al Snowboard</h2>
+        <p>El snowboard es un deporte de invierno que consiste en descender una pendiente nevada sobre una tabla unida a los pies. Es una actividad que combina habilidades técnicas, equilibrio y estilo personal.</p>
+        <p>Este deporte ha ganado popularidad en las últimas décadas y es una disciplina destacada en los Juegos Olímpicos de Invierno.</p>
+        
+    </section>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#tecnica">Técnica</a></li>
+                <li><a href="#equipamiento">Equipamiento</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2 id="historia">Historia del Snowboard</h2>
+            <p>El snowboard es un deporte de invierno que se originó en la década de 1960...</p>
+            <h2 id="tecnica">Técnica del Snowboard</h2>
+            <p>La técnica básica del snowboard incluye el equilibrio, el giro y la frenada...</p>
+            <h2 id="equipamiento">Equipamiento necesario</h2>
+            <p>Para practicar snowboard se necesita una tabla, botas, fijaciones y ropa adecuada...</p>
+        </article>
+    </section>
+    <footer>
+        <p>Juan Carlos López Ponce - 2025 - Licencia CC</p>
+    </footer>
+    
+</body>
+</html>
