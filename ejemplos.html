@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p {
+  display: block; /* por defecto */
+}
+div {
+  position: static; /*No acepta top, left, right, bottom.*/
+}
+.caja {
+  position: relative; /* El elemento mantiene su espacio, pero se puede mover relativamente a su posición original. */
+  top: 10px; /* Se mueve 10px hacia abajo y 20px hacia la derecha. */
+  left: 20px;
+}
+.padre { /* El elemento se posiciona respecto a su primer ancestro con position distinto de static. */
+  position: relative; /* El hijo se pega a la esquina superior derecha del padre. */
+} /* Si no lo encuentra, usa el <body> como referencia. */
+
+.hijo {
+  position: absolute; 
+  top: 0;
+  right: 0;
+}
+
+.menu {
+  position: fixed;  /* El elemento se queda fijo en la pantalla aunque hagas scroll. */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header {
+  position: sticky; /* El elemento actúa como relative hasta que haces scroll y queda pegado como fixed. */
+  top: 0; 
+}
+/*
+¿Cuándo usar cada uno?
+Tipo	Cuándo usarlo
+static	Normalmente no lo cambias.
+relative	Si quieres mover un elemento un poco sin sacarlo del flujo.
+absolute	Para popups, elementos decorativos, badges, overlays dentro de un contenedor.
+fixed	Menús, botones flotantes, elementos fijos en pantalla.
+sticky	Encabezados que se pegan al hacer scroll. 
+*/
+
+.contenedor {
+  display: flex;  /* display: flex activa Flexbox, un sistema para alinear elementos de manera sencilla en una dimensión*/
+  justify-content: center; /* horizontal (rows) o vertical (columns).*/
+  align-items: center; /* Esto coloca los elementos hijos uno al lado del otro (como columnas) por defecto.*/
+  flex-direction: row;       /* horizontal (default) */
+flex-direction: column;    /* vertical */
+/*Alinea los elementos en el eje principal (horizontal si es row).*/
+justify-content: flex-start;   /* al inicio */
+justify-content: center;       /* centrado */
+justify-content: flex-end;     /* al final */
+justify-content: space-between; /* espacio entre ellos */
+justify-content: space-around;
+align-items: flex-start; /*Alinea en el eje perpendicular del contenedor.*/
+align-items: center;
+align-items: flex-end;
+align-items: stretch; /* default */
+gap: 10px; /*Separa elementos sin márgenes:*/
+
+
+}
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>Elemento 1</p>
+    <p>Elemento 2</p>
+
+</body>
+</html>
