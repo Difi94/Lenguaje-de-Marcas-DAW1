@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-flex-10 {
+    width: 90%;
+    height: 600px;
+    border: 3px solid red;
+    
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.bloque-10 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.b-uno, .b-dos, .b-tres, .b-cuatro {
+    flex: 0 0 50%;
+    height: 50%; 
+}
+
+.b-cinco, .b-seis {
+    flex: 0 0 50%; 
+}
+
+.b-cinco { height: 60%; }
+.b-seis { height: 40%; }
+
+
+.b-uno { background-color: #00A693; }
+.b-dos { background-color: #9B59B6; }
+.b-tres { background-color: #34495E; }
+.b-cuatro { background-color: #2C3E50; }
+.b-cinco { background-color: #F1C40F; }
+.b-seis { background-color: #E67E22; }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-flex-10">
+        <div class="bloque-10 b-uno">Uno 🦁</div>
+        <div class="bloque-10 b-dos">Dos 😌</div>
+        <div class="bloque-10 b-tres">Tres 😔</div>
+        <div class="bloque-10 b-cuatro">Cuatro 🌴</div>
+        <div class="bloque-10 b-cinco">Cinco 🍕</div>
+        <div class="bloque-10 b-seis">Seis 🍀</div>
+    </div>
+</body>
+</html>

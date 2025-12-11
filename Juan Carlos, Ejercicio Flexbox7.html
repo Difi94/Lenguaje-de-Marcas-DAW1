@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body {
+    margin: 0;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-flex {
+    width: 90%;
+    height: 700px; 
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around; 
+    justify-content: center;
+}
+
+.bloque {
+    height: 80px;
+    width: 30%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.contenedor-flex :nth-child(-n + 9) {
+    width: calc(33.33% - 10px);
+}
+
+.contenedor-flex :nth-child(10) {
+    width: 30%;
+}
+
+.contenedor-flex :nth-child(1) { background-color: #00A693; }
+.contenedor-flex :nth-child(2) { background-color: #4A90E2; }
+.contenedor-flex :nth-child(3) { background-color: #9B59B6; }
+.contenedor-flex :nth-child(4) { background-color: #E74C3C; }
+.contenedor-flex :nth-child(5) { background-color: #F1C40F; }
+.contenedor-flex :nth-child(6) { background-color: #E67E22; }
+.contenedor-flex :nth-child(7) { background-color: #C0392B; }
+.contenedor-flex :nth-child(8) { background-color: #BDC3C7; }
+.contenedor-flex :nth-child(9) { background-color: #1ABC9C; }
+.contenedor-flex :nth-child(10) { background-color: #008080; }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-flex">
+        <div class="bloque">1</div>
+        <div class="bloque">2</div>
+        <div class="bloque">3</div>
+        <div class="bloque">4</div>
+        <div class="bloque">5</div>
+        <div class="bloque">6</div>
+        <div class="bloque">7</div>
+        <div class="bloque">8</div>
+        <div class="bloque">9</div>
+        <div class="bloque">10</div>
+    </div>
+</body>
+</html>

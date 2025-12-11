@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.container {
+    display: flex;
+    border: 5px solid red;
+    margin: 20px;
+}
+
+.item {
+    flex: 1;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.d1 { background: #f1c40f; }
+.d2 { background: #1abc9c; }
+.d3 { background: #3498db; }
+.d4 { background: #34495e; }
+.d5 { background: #e67e22; }
+.d6 { background: #d35400; }
+.d7 { background: #c0392b; }
+.d8 { background: #bdc3c7; }
+.d9 { background: #2ecc71; }
+.d10{ background: #16a085; }
+
+/* Cambio de orden */
+.d5 { order: -1; }
+.d6 { order: 99; }
+</style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+  <div class="item d1">1</div>
+  <div class="item d2">2</div>
+  <div class="item d3">3</div>
+  <div class="item d4">4</div>
+  <div class="item d5">5</div>
+  <div class="item d6">6</div>
+  <div class="item d7">7</div>
+  <div class="item d8">8</div>
+  <div class="item d9">9</div>
+  <div class="item d10">10</div>
+</div>
+
+</body>
+</html>

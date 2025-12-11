@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+.contenedor-flex-9 {
+    width: 100%;
+    height: 150px; 
+    border: 3px solid red;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bloque-9 {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.b1 { flex-grow: 1; background-color: #00A693; } 
+.b2 { flex-grow: 2; background-color: #4A90E2; }
+.b3 { flex-grow: 3; background-color: #9B59B6; }
+.b4 { flex-grow: 1; background-color: #34495E; }
+.b5 { flex-grow: 4; background-color: #F1C40F; }
+.b6 { flex-grow: 1; background-color: #E74C3C; }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-flex-9">
+        <div class="bloque-9 b1">Uno 🦁</div>
+        <div class="bloque-9 b2">Dos 😌</div>
+        <div class="bloque-9 b3">Tres 🟣</div>
+        <div class="bloque-9 b4">Cuatro 🟡</div>
+        <div class="bloque-9 b5">Cinco 🍕</div>
+        <div class="bloque-9 b6">Seis 🍀</div>
+    </div>
+</body>
+</html>
