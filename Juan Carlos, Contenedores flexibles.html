@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            width: 200px;
+            background-color: #addfdc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #b500c59f;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .card h2 {
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .card-body {
+            flex: 1;
+            padding: 15px;
+        }
+        .card-footer {
+            background-color: #f8f8f8;
+            padding: 10px 15px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Trabajos</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="card">
+        <h2>Tarjeta 1</h2>
+        <div class="card-body">
+            <p>Contenido</p>
+        </div>
+        <div class="card-footer">
+            <p>Pie</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Tarjeta 2</h2>
+        <div class="card-body">
+            <p>Contenido</p>
+        </div>
+        <div class="card-footer">
+            <p>Pie</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Tarjeta 3</h2>
+        <div class="card-body">
+            <p>Contenido</p>
+        </div>
+        <div class="card-footer">
+            <p>Pie</p>
+        </div>
+    </div>
+    
+</body>
+</html>
