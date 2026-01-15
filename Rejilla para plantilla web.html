@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejilla para plantilla web</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header header header header header"
+                "menu main main right right right"
+                "menu main main right right right"
+                "menu main main right right right"
+                "footer footer footer footer footer footer";
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: #f8b400;
+            padding: 20px;
+        }
+        nav {
+            grid-area: menu;
+            background-color: #6a2c70;
+            padding: 20px;
+        }
+        main {
+            grid-area: main;
+            background-color: #b83b5e;
+            padding: 20px;
+        }
+        .right {
+            grid-area: right;
+            background-color: #0b4f6c;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #1b262c;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav>
+        <h2>Menu de Navegación</h2>
+        <ul>
+            <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">Enlace 2</a></li>
+            <li><a href="#">Enlace 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Centro</h2>
+        <p>Contenido principal de la página.</p>
+    </main>
+    <div class="right">
+        <h2>Lateral Derecho</h2>
+        <p>Contenido adicional o anuncios.</p>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+        <p>Información de pie de página.</p>
+    </footer>
+</body>
+</html>
