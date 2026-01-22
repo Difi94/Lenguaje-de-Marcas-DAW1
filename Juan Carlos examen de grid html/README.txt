@@ -1,0 +1,2 @@
+Explicación del grid:
+He creado una plantilla con grid de 4x6 dividas por 1 frame, con la disposición actual me quedaría algo semejante a lo que se pide de un 70-30 con el header y footer ocupando el ancho completo.
