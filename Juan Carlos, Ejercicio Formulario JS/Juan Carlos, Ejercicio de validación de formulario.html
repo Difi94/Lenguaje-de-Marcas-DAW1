@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estiloformulario.css">
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo">
+        <div id="codigoError" class="error"></div>
+
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre">
+        <div id="nombreError" class="error"></div>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni">
+        <div id="dniError" class="error"></div>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+        <div id="telefonoError" class="error"></div>
+
+        <label for="correo">E-mail:</label>
+        <input type="text" id="correo" name="correo">
+        <div id="correoError" class="error"></div>
+
+        <div id="mensajeExito" class="exito"></div>
+
+        <div class="acciones-formulario">
+            <button type="button" onclick="validarFormulario()">Validar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+
+    <script src="Validar.js"></script>
+    
+</body>
+</html>

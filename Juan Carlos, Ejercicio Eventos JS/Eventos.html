@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Eventos JS</title>
+</head>
+
+<body>
+    <h1>Ejemplo Eventos JS</h1>
+    <p id="mensaje"></p>
+
+    <button onclick="mostrarMensaje('Has hecho clic en el botón')">Haz clic aquí</button>
+
+    <div onmouseover="mostrarMensaje('Estás sobre el div')" onmouseout="mostrarMensaje('Has salido del div')" style="width:200px; height:100px; background-color:lightblue; margin-top:20px;">
+        Pasa el ratón por aquí
+    </div>
+
+    <script>
+        function mostrarMensaje(mensaje) {
+            document.getElementById('mensaje').textContent = mensaje;
+        }
+
+        window.onload = function() {
+            mostrarMensaje('La página se ha cargado');
+        };
+    </script>
+    
+</body>
+</html>
