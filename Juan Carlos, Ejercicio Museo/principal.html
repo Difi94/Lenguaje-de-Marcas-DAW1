@@ -3,60 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>principal</title>
-    <!--
-    Header (logo + menú)
-
-Hero / imagen principal
-
-Exposiciones
-
-Horarios
-
-Ubicación
-
-Noticias
-
-Footer (conexiones a redes sociales)
-    -->
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-    }
-
-    header, footer {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-    }
-</style>
-</head>
+    <title>Museo Tecnológico</title>
+    <link rel="stylesheet" href="styles.css">
 
 <body>
-    <header style="background-color: #333; color: white; padding: 10px 0; text-align: center;">
+    <header>
         <h1>Museo Tecnológico</h1>
         <nav>
-            <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Inicio</a>
-            <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Exposiciones</a>
-            <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Horarios</a>
-            <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Ubicación</a>
-            <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Noticias</a>
+            <a href="#">Inicio</a>
+            <a href="#">Exposiciones</a>
+            <a href="#">Horarios</a>
+            <a href="#">Ubicación</a>
+            <a href="#">Noticias</a>
         </nav>
     </header>
-    <footer style="background-color: #333; color: white; padding: 10px 0; text-align: center; position: fixed; width: 100%; bottom: 0;">
+    <div class="hero">
+        <div class="card horarios">
+            <h2>Horarios</h2>
+            <p>Lunes a Viernes: 10:00 - 18:00</p>
+            <p>Sábados y Domingos: 11:00 - 19:00</p>
+        </div>
+        <div class="card exposiciones">
+            <h2>Exposiciones Actuales</h2>
+            <ul>
+                <li>Exposición de Robots Interactivos</li>
+                <li>Historia de la Computación</li>
+                <li>Innovaciones en Inteligencia Artificial</li>
+            </ul>
+        </div>
+        <div class="card ubicacion">
+            <h2>Ubicación</h2>
+            <p>El Museo Tecnológico se encuentra en la Calle de la Innovación 123, Valladolid, España.</p>
+            <p>Coordenadas: 41.6528° N, 4.7245° W</p>
+        </div>
+        <div class="card noticias">
+            <h2>Noticias</h2>
+            <article>
+                <h3>Nueva Exposición Inaugurada</h3>
+                <p>Descubre la nueva exposición sobre robots interactivos, abierta al público desde hoy.</p>
+            </article>
+            <article>
+                <h3>Evento Especial este Fin de Semana</h3>
+                <p>Únete a nuestras charlas sobre IA este sábado a las 15:00.</p>
+            </article>
+        </div>
+    </div>
+    <footer>
         <p>Síguenos en nuestras redes sociales:</p>
-        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Facebook</a>
-        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Twitter</a>
-        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
     </footer>
     
 </body>

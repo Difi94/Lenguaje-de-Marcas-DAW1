@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ejercicios Básicos de JavaScript</h1>
+
+    <div class="exercise">
+        <h2>Ejercicio 1: Determinar si un número es par o impar</h2>
+        <input type="number" id="num1" placeholder="Introduce un número">
+        <button onclick="checkParImpar()">Comprobar</button>
+        <div id="result1"></div>
+    </div>
+
+    <div class="exercise">
+        <h2>Ejercicio 2: Área de un rectángulo</h2>
+        <input type="number" id="ancho" placeholder="Ancho">
+        <input type="number" id="alto" placeholder="Alto">
+        <button onclick="calcularArea()">Calcular Área</button>
+        <div id="result2"></div>
+    </div>
+
+    <div class="exercise">
+        <h2>Ejercicio 3: Validar DNI</h2>
+        <input type="number" id="dniNum" placeholder="Número de DNI">
+        <input type="text" id="dniLetra" placeholder="Letra" maxlength="1">
+        <button onclick="validarDNI()">Validar</button>
+        <div id="result3"></div>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script src="dni.js"></script>
+</body>
+</html>

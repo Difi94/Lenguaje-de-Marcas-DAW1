@@ -3,71 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <!--
-    Crear una Landing page para un museo tecnologico:
-    Header (logo + menu)
-    Hero / imagen principal
-    Call to action (boton explorar museo) dentro de la imagen principal
-    Landing debe ser atractiva visualmente
-    Landing debe ser responsive
-    La imagen principal no se debe pixelar al ajustar el tamaño de la ventana
-    -->
+    <title>Museo Tecnológico</title>
+
 </head>
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        text-align: center;
-    }
-
-    header {
-        background-color: #333;
-        color: white;
-        padding: 10px 0;
-    }
-
-    .hero-image {
-        width: 100%;
-        height: auto;
-        max-height: 80vh;
-        object-fit: cover;
-    }
-
-    .cta-button {
-        position: relative;
-        top: -60px;
-        padding: 15px 30px;
-        background-color: #ff6600;
-        color: white;
-        text-decoration: none;
-        font-size: 1.2em;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .cta-button:hover {
-        background-color: #e65c00;
-    }
-
-    @media (max-width: 600px) {
-        .cta-button {
-            font-size: 1em;
-            padding: 10px 20px;
-            top: -40px;
-        }
-    }
-    
-</style>
+<link rel="stylesheet" href="styles.css">
 
 <body>
     
     <header>
         <h1>Museo Tecnológico</h1>
     </header>
-    <img src="https://i.blogs.es/dd02a3/sala-valladolid/450_1000.jpg" alt="Imagen del Museo Tecnológico de Valladolid" class="hero-image">
-    <a href="#explore" class="cta-button">Explorar el Museo</a>
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Imagen del Museo Tecnológico" class="hero-image">
+    <a href="principal.html" class="cta-button">Visita el museo</a>
     <footer>
         <p>&copy; 2026 Museo Tecnológico</p>
     </footer>

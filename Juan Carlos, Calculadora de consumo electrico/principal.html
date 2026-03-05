@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo Eléctrico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Calculadora de Consumo Eléctrico</h1>
+            <div class="help-button" id="helpBtn">?
+                <div class="help-tooltip" id="helpTooltip">
+                    <p>Esta aplicación calcula el consumo eléctrico de tus dispositivos. Introduce el nombre del aparato, su potencia en Watts, las horas diarias que está encendido y el número de días. La aplicación calculará automáticamente el consumo en kWh y el costo total multiplicado por el precio del kWh que indiques.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="form-group">
+                <label for="deviceName">Nombre del dispositivo:</label>
+                <input type="text" id="deviceName" placeholder="Ej: Aire acondicionado">
+            </div>
+
+            <div class="form-group">
+                <label for="consumption">Consumo eléctrico (Watts):</label>
+                <input type="number" id="consumption" placeholder="Ej: 1500" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="hours">Número de horas diarias:</label>
+                <input type="number" id="hours" placeholder="Ej: 8" min="0" max="24">
+            </div>
+
+            <div class="form-group">
+                <label for="days">Número de días encendido:</label>
+                <input type="number" id="days" placeholder="Ej: 30" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="priceKwh">Precio del kWh (€):</label>
+                <input type="number" id="priceKwh" placeholder="Ej: 0.15" min="0" step="0.01">
+            </div>
+
+            <div class="results">
+                <div class="result-item">
+                    <label>Consumo total (kWh):</label>
+                    <div id="totalConsumption" class="result-value">0.00</div>
+                </div>
+                <div class="result-item">
+                    <label>Precio total (€):</label>
+                    <div id="totalPrice" class="result-value price">0.00 €</div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="registrarConsola()" class="btn-register">Registrar en consola</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
