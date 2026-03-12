@@ -1,0 +1,45 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.monedas, .billetes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.moneda {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.billete {
+  width: 80px;
+  height: 40px;
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.error {
+  border: 2px solid red;
+}
