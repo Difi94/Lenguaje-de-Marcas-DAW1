@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de seguridad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre">
+        <div id="nombreError" class="error"></div>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni">
+        <div id="dniError" class="error"></div>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+        <div id="telefonoError" class="error"></div>
+
+        <label for="correo">E-mail:</label>
+        <input type="text" id="correo" name="correo">
+        <div id="correoError" class="error"></div>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="text" id="contraseña" name="contraseña">
+        <div id="contraseñaError" class="error"></div>
+
+        <div id="mensajeExito" class="exito"></div>
+
+        <div class="acciones-formulario">
+            <button type="button" onclick="validarFormulario()">Validar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
